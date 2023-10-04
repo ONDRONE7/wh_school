@@ -71,5 +71,7 @@ BEGIN
            ic.staff_id,
            ic.ch_dt
     FROM ins_cte ic;
+
+    RETURN JSONB_BUILD_OBJECT('data', NULL);
 END
 $$;
